@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { toggleMenu } from '../utils/appSlice';
 import { YOUTUBE_SEARCH_API } from '../utils/Constants';
+import { cacheResults } from '../utils/searchSlice';
 
 const Head = () => {
 	const [searchQuery, setSearchQuery] = useState('');
 	const [suggestions, setSuggestions] = useState([]);
 	const [showSuggestions, setShowSuggestions] = useState(true);
 
+	const searchCache = useSelector((store) => store.search);
+	const dispatch = useDispatch();
+
 	useEffect(() => {
-		const timer = setTimeout(() => getSearchSuggestions(), 200);
+		const timer = setTimeout(() => {
+			if (searchCache[searchQuery]) {
+				setSuggestions(setSuggestions[searchQuery]);
+			} else {
+				getSearchSuggestions();
+			}
+		}, 200);
 		return () => {
 			clearTimeout(timer);
 		};
@@ -18,11 +28,15 @@ const Head = () => {
 	const getSearchSuggestions = async function () {
 		const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
 		const json = await data.json();
-		console.log(json[1]);
 		setSuggestions(json[1]);
+		dispatch(
+			cacheResults({
+				[searchQuery]: json[1],
+			})
+		);
 	};
 
-	const dispatch = useDispatch();
+	// const dispatch = useDispatch();
 	const toggleMenuHandler = () => {
 		dispatch(toggleMenu());
 	};
@@ -43,7 +57,7 @@ const Head = () => {
 					/>
 				</a>
 			</div>
-			<div className='col-span-10 text-center'>
+			<div className='col-span-10 text-center relative'>
 				<div>
 					<input
 						className='w-1/2 rounded-l-full border border-gray-400 p-2 focus:outline-none focus:border-blue-500'
@@ -58,7 +72,7 @@ const Head = () => {
 					</button>
 				</div>
 				{showSuggestions && (
-					<div className='rounded-lg border border-gray-50 fixed bg-white w-2/6 ml-64   shadow-md'>
+					<div className='rounded-lg border border-gray-50 absolute bg-white w-2/6 ml-64   shadow-md'>
 						<ul className='text-left'>
 							{suggestions.map((suggest) => (
 								<li
