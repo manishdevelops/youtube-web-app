@@ -15,7 +15,7 @@ const Head = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			if (searchCache[searchQuery]) {
-				setSuggestions(setSuggestions[searchQuery]);
+				setSuggestions(searchCache[searchQuery]);
 			} else {
 				getSearchSuggestions();
 			}
