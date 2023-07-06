@@ -11,17 +11,17 @@ const Sidebar = () => {
 			<ul>
 				<Link to='/'>
 					<li className='my-1 py-1.5 px-3 rounded-lg  hover:bg-slate-400 cursor-pointer'>
-						<i class='bx bx-home'></i> <span className='ml-3'>Home</span>
+						<i className='bx bx-home'></i> <span className='ml-3'>Home</span>
 					</li>
 				</Link>
 
 				<li className='my-1 py-1.5 px-3 rounded-lg  hover:bg-slate-400 cursor-pointer'>
-					<i class='bx bx-camera-movie'></i>{' '}
+					<i className='bx bx-camera-movie'></i>{' '}
 					<span className='ml-3'>Shorts</span>
 				</li>
 
 				<li className='my-1 py-1.5 px-3 rounded-lg  hover:bg-slate-400 cursor-pointer'>
-					<i class='bx bxs-videos'></i>{' '}
+					<i className='bx bxs-videos'></i>{' '}
 					<span className='ml-3'>Subscriptions</span>
 				</li>
 			</ul>
@@ -30,17 +30,17 @@ const Sidebar = () => {
 			<h1 className='font-bold pt-5 '>Subscriptions</h1>
 			<ul>
 				<li className='my-1 py-1.5 px-3 rounded-lg  hover:bg-slate-400 cursor-pointer'>
-					<i class='bx bx-music'></i> <span className='ml-3'>Music</span>
+					<i className='bx bx-music'></i> <span className='ml-3'>Music</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bxs-medal'></i> <span className='ml-3'>Sports</span>
+					<i className='bx bxs-medal'></i> <span className='ml-3'>Sports</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bx-game'></i>
+					<i className='bx bx-game'></i>
 					<span className='ml-3'>Gaming</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bx-film'></i>
+					<i className='bx bx-film'></i>
 					<span className='ml-3'>Movies</span>
 				</li>
 			</ul>
@@ -48,34 +48,34 @@ const Sidebar = () => {
 			<h1 className='font-bold pt-5 px-3'>Explore</h1>
 			<ul>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bxs-hot'></i> <span className='ml-3'>Trending</span>
+					<i className='bx bxs-hot'></i> <span className='ml-3'>Trending</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bx-shopping-bag'></i>
+					<i className='bx bx-shopping-bag'></i>
 					<span className='ml-3'>Shopping</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bx-music'></i> <span className='ml-3'> Music</span>
+					<i className='bx bx-music'></i> <span className='ml-3'> Music</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bx-film'></i>
+					<i className='bx bx-film'></i>
 					<span className='ml-3'>Movies & Shows</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bx-wifi'></i> <span className='ml-3'>Live</span>
+					<i className='bx bx-wifi'></i> <span className='ml-3'>Live</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bx-game'></i>
+					<i className='bx bx-game'></i>
 					<span className='ml-3'>Gaming</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bx-news'></i> <span className='ml-3'>News</span>
+					<i className='bx bx-news'></i> <span className='ml-3'>News</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bxs-medal'></i> <span className='ml-3'>Sports</span>
+					<i className='bx bxs-medal'></i> <span className='ml-3'>Sports</span>
 				</li>
 				<li className='my-1 py-1.5 px-3 hover:bg-slate-400 rounded-lg cursor-pointer'>
-					<i class='bx bx-bulb'></i> <span className='ml-3'>Learning</span>
+					<i className='bx bx-bulb'></i> <span className='ml-3'>Learning</span>
 				</li>
 			</ul>
 		</div>

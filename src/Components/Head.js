@@ -68,7 +68,7 @@ const Head = () => {
 						onBlur={() => setShowSuggestions(false)}
 					/>
 					<button className='border border-gray-300  rounded-r-full py-2 px-6 bg-gray-50'>
-						<i class='bx bx-search'></i>
+						<i className='bx bx-search'></i>
 					</button>
 				</div>
 				{showSuggestions && (

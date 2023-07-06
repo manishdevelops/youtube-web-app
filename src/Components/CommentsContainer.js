@@ -2,19 +2,19 @@ import React from 'react';
 
 const commentsData = [
 	{
-		name: 'manish',
+		name: 'xyz',
 		text: 'this is your Manish',
 		replies: [
 			{
-				name: 'manish',
+				name: 'xyz',
 				text: 'this is your Manish',
 				replies: [
 					{
-						name: 'manish',
+						name: 'xyz',
 						text: 'this is your Manish',
 						replies: [
 							{
-								name: 'manish',
+								name: 'xyz',
 								text: 'this is your Manish',
 								replies: [],
 							},
@@ -23,29 +23,29 @@ const commentsData = [
 				],
 			},
 			{
-				name: 'manish',
+				name: 'xyz',
 				text: 'this is your Manish',
 				replies: [],
 			},
 			{
-				name: 'manish',
+				name: 'xyz',
 				text: 'this is your Manish',
 				replies: [],
 			},
 		],
 	},
 	{
-		name: 'manish',
+		name: 'xyz',
 		text: 'this is your Manish',
 		replies: [],
 	},
 	{
-		name: 'manish',
+		name: 'xyz',
 		text: 'this is your Manish',
 		replies: [],
 	},
 	{
-		name: 'manish',
+		name: 'xyz',
 		text: 'this is your Manish',
 		replies: [],
 	},

@@ -41,7 +41,7 @@ const LiveChat = () => {
 					e.preventDefault();
 					dispatch(
 						addMessage({
-							name: 'Deepak ',
+							name: 'You ',
 							message: liveMessage,
 						})
 					);
